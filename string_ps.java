@@ -3,7 +3,8 @@ public class string_ps{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         System.out.println("Give the string:");
-        
+        // Practicing Java questions 
+        // Practicing git
         //1.
         /* 
         String sample = sc.next(); // next() would only store 'Amit' even if you typed 'Amit Kumar Yadav'
