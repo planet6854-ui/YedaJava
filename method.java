@@ -11,10 +11,8 @@
 
 import java.util.Scanner;
 public class method{
-    static String evenodd() {
-        Scanner sc = new Scanner (System.in);
-        System.out.println("Enter a number :");
-        int n = sc.nextInt();
+    //For finding even and odd
+    static String evenodd(int n) {
         String result;
         if((n%2) == 0){
             result= "Even";
@@ -25,8 +23,31 @@ public class method{
         return result;
     }
 
+
+    //For checking if prime number 
+    static boolean prime(int n){
+        boolean result1 = true;
+        if(n<=1){
+            result1 = false;
+        }
+        
+        for(int i=2; i<n ; i++){
+            if((n%2)==0){
+                result1 = false;
+                break;
+            }
+        }
+        return result1;
+
+    }
+
     public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+        System.out.println("Enter a number :");
+        int n = sc.nextInt();
         System.out.println("=== Even-Odd Checker ===");
-        System.out.println(evenodd());
+        System.out.println(evenodd(n));
+        System.out.println("=== Prime Checker ===");
+        System.out.println(prime(n));
     }
 }
