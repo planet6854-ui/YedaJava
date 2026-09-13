@@ -51,3 +51,4 @@ public class method{
         System.out.println(prime(n));
     }
 }
+// Method overloading means the name of a single method is used many number of times with different number of arguements which are going to give different results.
