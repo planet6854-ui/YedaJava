@@ -1,4 +1,4 @@
-package com.company;
+
 import java.util.Scanner;
 public class cwh_29_PS_6_1{
     public static void main(String[] args){
